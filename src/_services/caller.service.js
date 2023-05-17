@@ -32,6 +32,7 @@ Axios.interceptors.response.use(
                 accountService.logout(); // Supprimez le token ici
             } else if (status === 404) {
                 console.log('Erreur 404 : Not Found');
+                accountService.logout();
                 // Gérez l'erreur 404 ici si nécessaire
             }
         }
