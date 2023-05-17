@@ -3,7 +3,7 @@ import { accountService } from "./account.service";
 
 const Axios = axios.create({
     /* baseURL: 'http://apiautomiles.automiles.fr/' 
-    Il faut configurer comme plus haut avant une mise en ligne */
+    Il faut configurer comme plus haut avant une mise en ligne et décommenter quand on est en local */
     baseURL: 'http://localhost:8000'
 });
 
@@ -24,7 +24,7 @@ Axios.interceptors.request.use(request => {
 Axios.interceptors.response.use(
     response => response,
     error => {
-        if (error.response) {
+        if (error.response) { 
             const status = error.response.status;
 
             if (status === 401) {
