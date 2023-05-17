@@ -9,8 +9,10 @@
         color: $white;
     }
 
-/*     .notifLogo {
+    .notifLogo {
         position: absolute;
         right: 20px;
-    } */
+        top: 1em;
+        transform: scale(0.6);
+    }
 }
