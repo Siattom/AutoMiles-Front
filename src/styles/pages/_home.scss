@@ -1,0 +1,78 @@
+.Home h3 {
+    background-color: $color-4;
+    color: $color-5;
+    font-size:x-large;
+    text-align: start;
+    padding-left: 1em;
+    padding-top: 1em;
+    margin-bottom: 1em;
+    height: 3.3em;
+}
+
+.pHome {
+    height: 4em;
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 1.5em;
+    position: relative; /* Ajoutez une position relative */
+  }
+  
+  .pHome::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0%; /* 80% de la longueur fixée à droite */
+    width: 85%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.692);
+  }
+  
+
+.pHome img{
+    padding-left: 1em;
+}
+
+.pHome p {
+    padding-left: 1em;
+    color: $color-6;
+    font-size:x-large;
+    align-self: center;
+    font-weight: bold;
+}
+
+.inserAlerte {
+    min-height: 5em;
+
+    table {
+        width: 100%;
+    }
+}
+
+.trHome {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid $color-4;
+} 
+
+.homeAlerteId {
+    min-width: 2em;
+    padding: 0.4em;
+}
+
+.homeAlerte {
+    width: 6em;
+    padding: 0.4em;
+}
+
+.logoNextHome {
+    align-self:center;
+    position: absolute;
+    right: 30px;
+}
+
+.Home .pHome .logoFoot {
+    align-self: center;
+}

@@ -1,0 +1,122 @@
+@font-face {
+    font-family: "font-1";
+    src: url(#);
+}
+
+$font-1: "font-1", sans-serif;
+
+$color-1: #69c061;
+$color-2: salmon;
+$color-3: #282C34;
+$color-4: rgba(128, 128, 128, 0.158);
+$color-5: rgba(128, 128, 128, 0.822);
+$color-6: rgb(102, 100, 100);
+$color-7: #FEAE44;
+$color-8: rgba(163, 199, 97, 0.24);
+$color-9: #fb6114d2;
+$white: rgb(243, 243, 243);
+
+@mixin verticalCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $white;
+    font-family: $font-1;
+    width: 50%;
+    min-height: 100vh;
+    margin: auto;
+    border: 1px solid black;
+    // @include verticalCenter;
+}
+li {
+    list-style-type: none;
+}
+h1, h2, h3 {
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+  }
+
+.navlink {
+    color: $color-6;
+    text-decoration: none;
+}
+
+.bouton {
+    width: 5em;
+    height: 2em;
+    border-radius: 12px;
+    background-color: $color-7;
+    border: none;
+    margin-left: 1em;
+}
+
+.boutonCreer {
+    width: 8em;
+    height: 2em;
+    border-radius: 12px;
+    background-color: $color-7;
+    border: none;
+    margin-left: 1em;    
+    display: flex;
+    justify-content: center;
+    p {
+        align-self: center;
+    }
+}
+
+.logoDone {
+    transform: scale(0.6);
+}
+
+h3 {
+    margin-top: 0.6em;
+}
+
+#root {
+    margin-bottom: 4em;
+}
+
+.pasdelien {
+    text-decoration: none;
+    color: black;
+}
+
+.group button {
+    background-color: $color-9;
+    border: none;
+    border-radius: 5px;
+}
+
+.grand {
+    margin-left: 9em;
+    margin-right: 9em;
+}
+
+@media only screen and (max-width: 800px) {
+
+    body {
+        width: 100%;
+        background: url(../../public/page-automile.png) center/cover;
+    }
+
+}

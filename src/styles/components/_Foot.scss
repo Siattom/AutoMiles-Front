@@ -1,0 +1,28 @@
+.Foot {
+    background-color: $color-7;
+    height: 4em;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 49.8%;
+
+}
+
+.logoFoot {
+    transform: scale(2);
+}
+
+.Foot p {
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .Foot {
+        width: 100%;
+    }
+    
+}
