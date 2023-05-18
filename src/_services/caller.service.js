@@ -2,9 +2,9 @@ import axios from "axios";
 import { accountService } from "./account.service";
 
 const Axios = axios.create({
-    /* baseURL: 'http://apiautomiles.automiles.fr/' 
-    Il faut configurer comme plus haut avant une mise en ligne et décommenter quand on est en local */
-    baseURL: 'http://localhost:8000'
+    baseURL: 'http://apiautomiles.automiles.fr/' 
+    /* Il faut configurer comme plus haut avant une mise en ligne et décommenter quand on est en local */
+    /* baseURL: 'http://localhost:8000' */
 });
 
 /**

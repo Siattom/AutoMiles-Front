@@ -67,7 +67,8 @@ const FactureInfo = () => {
             </form>
             <div className="photoFichier">
                 {facture && facture.photo && facture.photo.map((photo, index) => (
-                    <img key={index} src={`http://localhost:8000/uploads/${photo.name}`} alt={`Facture ${index + 1}`} />
+                    /* <img key={index} src={`http://localhost:8000/uploads/${photo.name}`} alt={`Facture ${index + 1}`} /> */
+                    <img key={index} src={`http://apiautomiles.automiles.fr/uploads/${photo.name}`} alt={`Facture ${index + 1}`} />
                 ))}
             </div>
 
