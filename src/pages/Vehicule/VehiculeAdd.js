@@ -3,6 +3,7 @@ import Logo from '../../components/Logo';
 import { useNavigate } from 'react-router-dom';
 import { vehiculeService } from '../../_services/vehicule.service';
 import VehiculeNav from '../../components/VehiculeNav';
+import Foot from '../../components/Foot';
 // ici on gere le fomulaire de création d'un vehicule
 
 const VehiculeAdd = () => {
@@ -77,7 +78,7 @@ const VehiculeAdd = () => {
                 </div>
             </form>
 
-            
+            <Foot />
         </div>
     );
 };

@@ -1,8 +1,9 @@
 import axios from "axios";
 import { accountService } from "./account.service";
+import { useNavigate } from "react-router-dom";
 
 const Axios = axios.create({
-    baseURL: 'http://apiautomiles.automiles.fr/' 
+    baseURL: 'http://apiautomiles.automiles.fr/'
     /* Il faut configurer comme plus haut avant une mise en ligne et décommenter quand on est en local */
     /* baseURL: 'http://localhost:8000' */
 });
@@ -21,6 +22,7 @@ Axios.interceptors.request.use(request => {
 /**
  * Intercepteur pour les erreurs de réponse
  */
+
 Axios.interceptors.response.use(
     response => response,
     error => {
@@ -33,8 +35,9 @@ Axios.interceptors.response.use(
             } else if (status === 404) {
                 console.log('Erreur 404 : Not Found');
                 accountService.logout();
-                // Gérez l'erreur 404 ici si nécessaire
-            }
+                const navigate = useNavigate();
+                navigate('/404'); // Redirige vers la page d'erreur personnalisée
+              }
         }
 
         return Promise.reject(error);

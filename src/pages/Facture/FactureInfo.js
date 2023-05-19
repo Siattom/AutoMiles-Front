@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import Logo from '../../components/Logo';
 import FactureNav from '../../components/FactureNav';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { factureService } from '../../_services/facture.service';
 import moment from 'moment';
+import Foot from '../../components/Foot';
 
 const FactureInfo = () => {
 
     const { id } = useParams();
+    const navigate = useNavigate()
 
     const [facture, setFactures] = useState({});
     const [file, setFile] = useState()
@@ -22,7 +24,7 @@ const FactureInfo = () => {
         factureService.postAjoutPhoto(id, file)
           .then(res => {
               console.log(res);
-              window.location.reload();
+              navigate('/facture/info/'+id)
           })
           .catch(err => {
             console.log(err.message);
@@ -71,7 +73,7 @@ const FactureInfo = () => {
                     <img key={index} src={`http://apiautomiles.automiles.fr/uploads/${photo.name}`} alt={`Facture ${index + 1}`} />
                 ))}
             </div>
-
+                <Foot />
         </div>
     );
 };

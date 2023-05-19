@@ -3,6 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { vehiculeService } from '../../_services/vehicule.service';
 import Logo from '../../components/Logo';
 import VehiculeNav from '../../components/VehiculeNav';
+import Foot from '../../components/Foot';
 
 const VehiculeEdit = () => {
   const { id } = useParams(); // id du véhicule à modifier
@@ -106,6 +107,7 @@ const VehiculeEdit = () => {
           <button>Modifier</button>
         </div>
       </form>
+      <Foot />
     </div>
   );
 };

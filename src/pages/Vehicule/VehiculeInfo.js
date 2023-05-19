@@ -4,6 +4,7 @@ import { vehiculeService } from '../../_services/vehicule.service';
 import { useNavigate, useParams } from 'react-router-dom';
 import VehiculeNav from '../../components/VehiculeNav';
 import { alerteService } from '../../_services/alerte.service';
+import Foot from '../../components/Foot';
 // ici on gere la récupération des infos d'un vehicule
 
 const VehiculeInfo = () => {
@@ -96,6 +97,7 @@ const VehiculeInfo = () => {
                     ))
                 }
             </div>
+            <Foot />
       </div>
     );
   };

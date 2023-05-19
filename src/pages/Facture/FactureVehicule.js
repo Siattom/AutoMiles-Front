@@ -4,6 +4,7 @@ import FactureNav from '../../components/FactureNav';
 import { factureService } from '../../_services/facture.service';
 import { useNavigate, useParams } from 'react-router-dom';
 import moment from 'moment';
+import Foot from '../../components/Foot';
 // on affiche les alertes d'un véhicule précis
 
 const FactureVehicule = () => {
@@ -69,7 +70,8 @@ const FactureVehicule = () => {
                         </div>
                     ))
                 }
-        </section>
+            </section>
+            <Foot />
         </div>
     );
 };

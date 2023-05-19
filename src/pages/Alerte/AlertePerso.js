@@ -3,6 +3,7 @@ import Logo from '../../components/Logo';
 import Alerte from '../../components/Alerte';
 import { alerteService } from '../../_services/alerte.service'
 import { useNavigate } from 'react-router-dom';
+import Foot from '../../components/Foot';
 // ici on affiche les alertes de l'utilisateur
 
 const AlertePerso = () => {
@@ -60,6 +61,7 @@ const AlertePerso = () => {
                         ))
                     }
             </section>
+            <Foot />
         </div>
     );
 };

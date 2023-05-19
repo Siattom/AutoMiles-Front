@@ -4,6 +4,7 @@ import FactureNav from '../../components/FactureNav';
 import { factureService } from '../../_services/facture.service';
 import moment from 'moment';
 import { useNavigate } from 'react-router-dom';
+import Foot from '../../components/Foot';
 // on gere l'affichage de la liste completes des alertes d'un utilisateur
 
 const FactureHistorique = () => {
@@ -76,7 +77,8 @@ const FactureHistorique = () => {
                         </div>
                     ))
                 }
-        </section>
+            </section>
+            <Foot />
         </div>
     );
 };

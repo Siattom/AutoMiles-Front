@@ -20,6 +20,7 @@ import FactureChoix from './pages/Facture/FactureChoix';
 import Creer from './pages/Auth/Creer';
 import FactureInfo from './pages/Facture/FactureInfo';
 import ContactMention from './pages/ContactMention';
+import NotFound from './pages/Auth/NotFound';
 
 const App = () => {
   return (
@@ -30,6 +31,10 @@ const App = () => {
             <Home />
           </AuthGuard>
         } />
+
+        <Route path="*" element={
+          <NotFound />}
+        /> {/* Route pour la gestion des erreurs 404 */}
 
         <Route path="/about" element={
           <AuthGuard>

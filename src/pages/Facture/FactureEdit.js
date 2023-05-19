@@ -3,6 +3,7 @@ import Logo from '../../components/Logo';
 import FactureNav from '../../components/FactureNav';
 import { useNavigate, useParams } from 'react-router-dom';
 import { factureService } from '../../_services/facture.service';
+import Foot from '../../components/Foot';
 // on gere le fomulaire de modification d'une facture
 
 const FactureEdit = () => {
@@ -86,6 +87,7 @@ const FactureEdit = () => {
                     <button>Ajouter</button>
                 </div>
             </form>
+            <Foot />
         </div>
     );
 };

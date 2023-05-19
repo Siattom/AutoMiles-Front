@@ -3,6 +3,7 @@ import Logo from '../../components/Logo';
 import FactureNav from '../../components/FactureNav';
 import { useNavigate } from 'react-router-dom';
 import { vehiculeService } from '../../_services/vehicule.service';
+import Foot from '../../components/Foot';
 
 const FactureChoix = () => {
 
@@ -47,7 +48,7 @@ const FactureChoix = () => {
                         ))
                     }               
                 </section>
-
+            <Foot />
         </div>
     );
 };

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Logo from '../components/Logo';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { alerteService } from '../_services/alerte.service';
+import Foot from '../components/Foot';
 
 const Home = () => {
 
@@ -74,6 +75,7 @@ const Home = () => {
                 </div>
                 
             </div>
+            <Foot />
         </div>
     );
 };

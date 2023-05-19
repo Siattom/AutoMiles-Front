@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { accountService } from '../../_services/account.service';
 import Logo from '../../components/Logo';
+import Foot from '../../components/Foot';
 
 const Creer = () => {
     let navigate = useNavigate()
@@ -61,6 +62,7 @@ const Creer = () => {
                     <button>Ajouter</button>
                 </div>
             </form>
+            <Foot />
         </div>
     );
 };

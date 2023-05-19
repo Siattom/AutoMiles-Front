@@ -4,6 +4,7 @@ import Logo from '../components/Logo';
 // ici c'est pour la gestion du bouton de déconnexion 
 import { accountService } from '../_services/account.service';
 import { useNavigate } from 'react-router-dom';
+import Foot from '../components/Foot';
 // fin
 
 const About = () => {
@@ -24,6 +25,7 @@ const About = () => {
             {/* bouton déconnexion */}
             <button onClick={logout}> Logout </button>
             {/* fin */}
+            <Foot />
         </div>
     );
 };

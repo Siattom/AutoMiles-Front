@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react';
 import Logo from '../../components/Logo';
 import Alerte from '../../components/Alerte';
 import { alerteService } from '../../_services/alerte.service';
-import { Link, Navigate } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 import moment from 'moment';
+import Foot from '../../components/Foot';
 
 const AlerteStatutClos = () => {
    
@@ -54,6 +55,7 @@ const AlerteStatutClos = () => {
             }
 
             </section>
+        <Foot />
     </div>
     );
 };

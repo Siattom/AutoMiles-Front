@@ -4,6 +4,7 @@ import Alerte from '../../components/Alerte';
 import { alerteService } from '../../_services/alerte.service';
 import { useNavigate, useParams } from 'react-router-dom';
 import moment from 'moment';
+import Foot from '../../components/Foot';
 // afficher les alertes closent ou pas
 
 const AlerteStatut = () => {
@@ -57,7 +58,8 @@ const AlerteStatut = () => {
                 ))
             }
 
-        </section>
+            </section>
+            <Foot />
         </div>
     );
 };

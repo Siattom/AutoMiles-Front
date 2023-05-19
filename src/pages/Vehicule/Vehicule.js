@@ -4,6 +4,7 @@ import Logo from '../../components/Logo';
 import { vehiculeService } from '../../_services/vehicule.service';
 import { NavLink, useNavigate } from 'react-router-dom';
 import VehiculeNav from '../../components/VehiculeNav';
+import Foot from '../../components/Foot';
 // ici on gere la liste des véhicules de l'utilisateur
 
 const Vehicule = () => {
@@ -72,6 +73,7 @@ const Vehicule = () => {
                 </button>
 
             </section>
+            <Foot/>
         </div>
     );
 };

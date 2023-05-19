@@ -3,6 +3,7 @@ import './auth.css';
 import Logo from '../../components/Logo';
 import { accountService } from '../../_services/account.service';
 import { useNavigate } from 'react-router-dom';
+import Foot from '../../components/Foot';
 
 const Login = () => {
     let navigate = useNavigate()
@@ -56,6 +57,7 @@ const Login = () => {
                     <p>Créer un compte</p>
                 </div>
             </form>
+            <Foot />
         </div>
     );
 };
