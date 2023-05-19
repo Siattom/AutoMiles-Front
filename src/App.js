@@ -21,6 +21,9 @@ import Creer from './pages/Auth/Creer';
 import FactureInfo from './pages/Facture/FactureInfo';
 import ContactMention from './pages/ContactMention';
 import NotFound from './pages/Auth/NotFound';
+import MaintenanceList from './pages/admin/MaintenanceList';
+import MaintenanceEdit from './pages/admin/MaintenanceEdit';
+import MaintenanceAjout from './pages/admin/MaintenanceAjout';
 
 const App = () => {
   return (
@@ -97,6 +100,26 @@ const App = () => {
         } />
 
         
+
+{/* ------------------------------------------SECTION Maintenance------------------------------------------ */}
+        
+        <Route path="/maintenance/list" element={
+          <AuthGuard>
+            <MaintenanceList />
+          </AuthGuard>
+        } />
+
+        <Route path="/maintenance/edit/:id" element={
+          <AuthGuard>
+            <MaintenanceEdit />
+          </AuthGuard>
+        } />
+        
+        <Route path="/maintenance/ajout" element={
+          <AuthGuard>
+            <MaintenanceAjout />
+          </AuthGuard>
+        } />
 
 {/* ------------------------------------------SECTION FACTURE------------------------------------------ */}
         

@@ -12,7 +12,14 @@
     .notifLogo {
         position: absolute;
         right: 20px;
-        top: 1em;
+        top: 2.5em;
+        transform: scale(0.6);
+    }
+
+    .notifLogoLeft {
+        position: absolute;
+        left: 20px;
+        top: 2.5em;
         transform: scale(0.6);
     }
 }
